@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    nav {
+      background-color: #197FD8;
+      color: white;
+      padding: 12px 24px;
+      overflow: hidden;
+    }
+    .nav-left {
+      float: left;
+    }
+
+    .nav-right {
+      float: right;
+    }
+
+    .nav-left a,
+    .nav-right a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 16px;
+    }
+
+    nav-right a:last-child {
+      margin-right: 0;
+    } 
+
+    .nav-left a:hover,
+    .nav-right a:hover {
+      text-decoration: underline;
+    } 
+
+    .nav-right {
+      display: flex; 
+      align-items: center; 
+      gap: 16px;
+    } 
+
+    .nav-right span.email {
+      font-style: italic;
+      font-weight: normal;
+    }
+    body{
+          font-family: Arial, sans-serif;
+           
+    }
+    h3{
+      text-align: center;
+      color: darkblue;
+    }
+        table {
+      background: #fff;
+
+      /* align table in center */
+      margin: auto;
+
+      border-collapse: collapse;
+      border-radius: 4px;
+
+      /* cell sapcing */
+      border-spacing: 28px; 
+      
+      align-items: center;
+      
+    }
+     label {
+      font-weight: normal;
+    }
+
+    input[type="file"] {
+      font-size: 14px;
+    }
+    
+    input[type="submit"] {
+      background-color: #197FD8;
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #145ea8;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 80%;
+      padding: 2px;
+      /* border-radius: 2px; */
+      font-size: 14px;
+    }
+     td {
+      padding: 10px;
+      vertical-align: top;
+    }
+    </style>
+</head>
+
+<body background="jelly.jpeg" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+    
+    <nav>
+    <div class="nav-left">
+      <a href="#">ADD</a>
+      <a href="#">VIEW</a>
+    </div>
+    <div class="nav-right">
+      <span class="email">LOGGED IN AS RAHUL@GMAIL.COM</span>
+      <a href="#">LOG OUT</a>
+    </div>
+  </nav>
+
+<form action="">
+        <h3>SURVEY FORM</h3>
+    
+        <table  width="50%"  >
+        <tr>
+            <td align="center" colspan="2">Let us know how we can improve </td>
+        </tr>
+        <tr>
+            <td align="right"><label for="name">*Name:</label></td>
+         <td>
+            <input type="text" name="name" id="" placeholder="Enter your email" size="35">
+            <tr>
+                <td align="right"><label for="email">*Email:</label></td>
+                <td><input type="email" name="email" id="" placeholder="Enter your email" size="35"></td>
+            </tr>
+            <tr>
+            <td align="right"><label for="age">*Age:</label></td>
+            <td><input type="tel" name="age" id="" placeholder="Age" size="35"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="file" name="file" id=""></td>
+        </tr>
+        <tr>
+            <td align="right"><label for="role">Which option describes your current role?</label></td>
+            <td><select name="role">
+                <option value="Student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="general public">General public</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td align="right"><label for="recommend">*How likely is that yoy would recommend this 
+            <br>
+                program to a friend?</label></td>
+            <td><input type="radio" name="recommend" id="" value="definitely">Definitely <br>
+           <input type="radio" name="recommend" id="" value="maybe">Maybe <br>
+            <input type="radio" name="recommend" id="" value="notsure">Not sure</td>
+        </tr>
+        <tr>
+            <td align="right"><label for="like">What would you like most here:</label></td>
+            <td><select name="like" id="">
+                <option value="Select an option">Select an option</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td align="right"><label for="chk">Things that should be improved in the future <br>
+                (Check all that apply):</label></td>
+            <td><input type="checkbox" name="chk1" id="" value="Front-end Projects">Front-end Projects<br>
+            <input type="checkbox" name="chk2" id="" value="Back-end Projects">Back-end Projects<br>
+            <input type="checkbox" name="chk3" id="" value="Data">Data Visualization</td>
+        </tr>
+        <tr>
+            <td align="right"><label for="">Any Comments or Suggestions?</label></td>
+            <td><textarea name="comments" id="" rows="3" cols="35" placeholder="Enter your comments here ..."></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" ><input type="submit" name="submit" id="" value="Submit"></td>
+        </tr>
+
+        </form>
+    </table>
+</body>
+</html>
